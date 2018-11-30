@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/spring-cloud-zxwl.iml" filepath="$PROJECT_DIR$/spring-cloud-zxwl.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zxwl-client/zxwl-client.iml" filepath="$PROJECT_DIR$/zxwl-client/zxwl-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zxwl-service/zxwl-service.iml" filepath="$PROJECT_DIR$/zxwl-service/zxwl-service.iml" />
+    </modules>
+  </component>
+</project>
