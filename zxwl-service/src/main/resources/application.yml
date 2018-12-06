@@ -1,6 +1,6 @@
 spring:
     application:
-        name: ace-service
+        name: zxwl-service
     cloud:
         consul:
             enabled: true
@@ -12,26 +12,11 @@ spring:
               instanceId: ${spring.application.name}:${vcap.application.instance_id:${spring.application.instance_id:${random.value}}}
               register: true
               enabled: true
-
 server:
     port: 8764 #启动端口
 # 必须配置
-feign:
-  httpclient:
-    enabled: false
-  okhttp:
-    enabled: true
-hystrix:
-  threadpool:
-    default:
-      coreSize: 1000 ##并发执行的最大线程数，默认10
-      maxQueueSize: 1000 ##BlockingQueue的最大队列数
-      queueSizeRejectionThreshold: 500 ##即使maxQueueSize没有达到，达到queueSizeRejectionThreshold该值后，请求也会被拒绝
-  command:
-    default:
-      execution:
-        isolation:
-          thread:
-            timeoutInMilliseconds: 110000
-
-
+#feign:
+#  httpclient:
+#    enabled: false
+#  okhttp:
+#    enabled: true

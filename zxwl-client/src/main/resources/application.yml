@@ -1,0 +1,22 @@
+spring:
+    application:
+        name: zxwl-client
+    cloud:
+        consul:
+            enabled: true
+            host: 127.0.0.1
+            port: 8500
+            discovery:
+              healthCheckPath: /actuator/health
+              healthCheckInterval: 5s
+              instanceId: ${spring.application.name}:${vcap.application.instance_id:${spring.application.instance_id:${random.value}}}
+              register: true
+              enabled: true
+server:
+    port: 8765 #启动端口
+# 必须配置
+#feign:
+#  httpclient:
+#    enabled: false
+#  okhttp:
+#    enabled: true
